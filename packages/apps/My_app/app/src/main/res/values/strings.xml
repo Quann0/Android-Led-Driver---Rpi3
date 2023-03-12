@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My_app</string>
+    <string name="led_off">Led Off</string>
+    <string name="led_on">Led On</string>
+</resources>
