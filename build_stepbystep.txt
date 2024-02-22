@@ -1,6 +1,6 @@
 Tested in ubuntu 18.04
 
-# do_patch toolchains 
+# Prepare environment
  $ sudo apt-get purge openjdk-* icedtea-* icedtea6-*
  $ sudo apt-get update
  $ sudo apt-get install openjdk-9-jdk
@@ -19,8 +19,6 @@ Tested in ubuntu 18.04
 # Download Android source with patches(local_manifests)
  $ mkdir boot
  $ cd boot
- $ git config --global user.name "quan"
- $ git config --global user.email "mas0987169143@gmail.com"
  $ repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r32
  $ git clone https://github.com/android-rpi/local_manifests .repo/local_manifests -b android10
  $ git config --global http.sslVerify false
